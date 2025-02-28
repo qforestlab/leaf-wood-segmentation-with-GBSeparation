@@ -57,3 +57,7 @@ There are also some data requirements to be able to run the code
 
 ### Tips
 * Downsampling and filtering (for reflectance) before running GBSeparation can improve the results.
+
+
+### Test file
+In the in folder on this repo you can find a test file to run the code. The out folder also contains the leaf-wood separated results for this file so you have an idea of the results.
