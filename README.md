@@ -57,6 +57,18 @@ There are also some data requirements to be able to run the code
 
 ### Tips
 * Downsampling and filtering (for reflectance) before running GBSeparation can improve the results.
+* GBS often fails in extracting the bottom of the trunk completely. It's an option to add a line to the code where you set points below 2 m (or another value) to wood.
+* Different settings give different results. A good idea is to use different parameters/reflectance settings and merge the results.
+      In this example we:
+  
+     * Only retained the last returns   
+     * Used six reflectance thresholds, resulting in six filtered point clouds (reflectance > -20 dB, -15 dB, -11dB, -9dB, -7.5 dB and -6dB)
+     * Downsampled each filtered point cloud until it contained fewer than 11 million points (computational limit of our infrastructure)
+     * Ran GBS separation on each filtered, downsampled point cloud, with two different input settings:  split_interval=[0.1, 0.2, 0.3, 0.5, 1], max_angle=0.25π; and split_interval=[0.5, 1, 1.5, 2, 3], max_angle=0.15 π. The first are the default settings, while the authors recommended the second to use on larger trees. We obtained, for each point cloud, the wood-separated point cloud.
+     * merged all the point clouds, and did an extra 'downsampling' to remove double points
+
+  In this figure, each colour is a different GBS run:
+  <img src="img/GBSruns.png)" alt="Alt Text" width="300" height="200">
 
 
 ### Test file
