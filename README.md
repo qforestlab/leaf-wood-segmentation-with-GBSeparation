@@ -68,7 +68,7 @@ There are also some data requirements to be able to run the code
      * merged all the point clouds, and did an extra 'downsampling' to remove double points
 
   In this figure, each colour is a different GBS run:
-    ![CLS_FigA3a_GBS](https://github.com/user-attachments/assets/f0ae9638-8cd0-4169-9ba3-1ba70becbfc8)
+  <img src="img/GBSruns.png)" alt="Alt Text" width="300" height="200">
 
 
 ### Test file
