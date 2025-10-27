@@ -1,6 +1,7 @@
 # Manual to run the GBSeparation algorithm for leaf-wood separation
+This is a manual on how to run the GBSeparation algorithm developed by Tian et al. (2022) (doi: 10.1109/TGRS.2022.3218603).
 
-The GBSeparation folder was downloaded in july 2023 from https://zenodo.org/record/6837613. Some slight modification have been done.
+> The GBSeparation folder was downloaded in july 2023 from https://zenodo.org/record/6837613. Some slight modifications have been done.
 
 ## Steps
 ### Get the code
